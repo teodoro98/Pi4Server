@@ -133,7 +133,7 @@ $ sudo bash get-docker.sh
 ```
 At this point, Docker should be installed.
 
-[![docker-installation](https://github.com/teodoro98/Pi4Server/tree/main/src/docker-installation.jpg)](https://github.com/teodoro98/Pi4Server/tree/main/src/)
+[![docker-installation](https://github.com/teodoro98/Pi4Server/blob/main/src/docker-installation.JPG?raw=true)](https://github.com/teodoro98/Pi4Server/tree/main/src/)
 
 
 
