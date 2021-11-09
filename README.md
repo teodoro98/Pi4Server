@@ -3,14 +3,6 @@
 
 Guidelines for install and configure a full Ubuntu Server on a Raspberry Pi 4 system.
 
-Used service:
-
-+ Kubernetes with Docker containers
-    + Vpn
-    + Samba
-    + Nginx 
-
-
 ### Table of Contents
 
 - [Ubuntu Server](#ubuntu-server)
