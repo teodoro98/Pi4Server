@@ -14,11 +14,11 @@ Used service:
 ### Table of Contents
 
 - [Ubuntu Server](#ubuntu-server)
-    - [Installation](#installation)
+    - [Ubuntu server installation](#ubuntu-server-installation)
     - [First SSH access](#first-ssh-access)
     - [SSH security - PubkeyAuthentication](#ssh-security-pubkeyauthentication)
 - [Docker](#docker)
-    - [Installation](#installation)
+    - [Docker installation](#docker-installation)
     - [Configuration and Testing](#configuration-and-testing)
 - [IPsec VPN Server on Docker](#ipsec-vpn-server-on-docker)
     - [Configure the VPN details](#configure-the-vpn-details)
@@ -31,7 +31,7 @@ Used service:
 
 ## Ubuntu Server
 
-### Installation
+### Ubuntu server installation
 
 First, prepare your Raspberry Pi downloading and installing Ubuntu Server on your sd card with
 <a href="https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#2-prepare-the-sd-card">Rpi Imager </a>
@@ -126,7 +126,7 @@ $ sudo apt upgrade -y
 $ sudo reboot
 ```
 
-### Installation
+### Docker installation
 
 To install Docker on your Raspberry Pi OS, you must download the Docker installation script on your Raspberry Pi 4 and run it.
 
