@@ -20,6 +20,7 @@ Used service:
 - [Docker](#docker)
     - [Docker installation](#docker-installation)
     - [Configuration and Testing](#configuration-and-testing)
+    - [Useful Docker commands](#useful-docker-commands)
 - [IPsec VPN Server on Docker](#ipsec-vpn-server-on-docker)
     - [Configure the VPN details](#configure-the-vpn-details)
     - [Start the IPsec VPN server](#start-the-ipsec-vpn-server)
@@ -158,6 +159,37 @@ Verify that Docker is installed correctly by running the hello-world image.
 You should see a result like this:
 
 [![docker-hello-world](https://github.com/teodoro98/Pi4Server/blob/main/src/docker-hello-world.JPG?raw=true)](https://github.com/teodoro98/Pi4Server/tree/main/src/)
+
+### Useful Docker commands
+
+You can list all the running Docker containers with the following command:
+
+```bash
+$ docker container ls
+```
+[![docker-container-ls](https://github.com/teodoro98/Pi4Server/blob/main/src/docker-container-ls.JPG?raw=true)](https://github.com/teodoro98/Pi4Server/tree/main/src/)
+
+You can name a Docker container with the –name command line argument.
+
+```bash
+$ docker run -d -p 8081:80 --name webserver2 httpd
+```
+
+You can stop a running Docker container using the name or the ID of the running container.
+
+```bash
+$ docker container stop webserver2
+#or
+$ docker container stop [CONTAINER ID]
+```
+
+You can remove a stopped Docker container using the name or the ID of the running container.
+
+```bash
+$ docker container rm webserver2
+#or
+$ docker container rm [CONTAINER ID]
+```
 
 
 ## IPsec VPN Server on Docker
