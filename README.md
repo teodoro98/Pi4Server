@@ -14,8 +14,19 @@ Used service:
 ### Table of Contents
 
 - [Ubuntu Server](#ubuntu-server)
+    - [Installation](#installation)
+    - [First SSH access](#first-ssh-access)
+    - [SSH security - PubkeyAuthentication](#ssh-security-pubkeyauthentication)
 - [Docker](#docker)
-    - [IPsec VPN Server on Docker](#ipsec-vpn-server-on-docker)
+    - [Installation](#installation)
+    - [Configuration and Testing](#configuration-and-testing)
+- [IPsec VPN Server on Docker](#ipsec-vpn-server-on-docker)
+    - [Configure the VPN details](#configure-the-vpn-details)
+    - [Start the IPsec VPN server](#start-the-ipsec-vpn-server)
+    - [Check the VPN server status](#check-the-vpn-server-status)
+    - [Retrieve VPN login details](#retrieve-vpn-login-details)
+    - [Connect to IPsec VPN](#connect-to-ipsec-vpn)
+
 - [References](#references)
 
 ## Ubuntu Server
@@ -127,7 +138,7 @@ At this point, Docker should be installed.
 
 [![docker-installation](https://github.com/teodoro98/Pi4Server/blob/main/src/docker-installation.JPG?raw=true)](https://github.com/teodoro98/Pi4Server/tree/main/src/)
 
-### Configuration
+### Configuration and Testing
 
 Once Docker is installed, add your login user to the docker group with the following command:
 
@@ -153,7 +164,7 @@ You should see a result like this:
 
 First make sure that you have successfully completed the step [Docker](#docker).
 
-### Configuration
+### Configure the VPN details
 
 You have to download the [vpn.env](https://github.com/teodoro98/Pi4Server/blob/main/src/vpn.env) file needed for the VPN configuration.
 
@@ -181,7 +192,7 @@ docker run \
     hwdsl2/ipsec-vpn-server
 ```
 
-### Check server status
+### Check the VPN server status
 
 Check the status of the IPsec VPN server:
 
