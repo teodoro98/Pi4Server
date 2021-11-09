@@ -15,16 +15,8 @@ Used service:
 
 - [Ubuntu Server](#ubuntu-server)
 - [Docker](#docker)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Next steps](#next-steps)
-- [Important notes](#important-notes)
-- [Upgrade Libreswan](#upgrade-libreswan)
-- [Manage VPN users](#manage-vpn-users)
-- [Advanced usage](#advanced-usage)
-- [Bugs & Questions](#bugs--questions)
-- [Uninstallation](#uninstallation)
-- [License](#license)
+    - [IPsec VPN Server on Docker](#ipsec-vpn-server-on-docker)
+- [References](#references)
 
 ## Ubuntu Server
 
@@ -180,7 +172,7 @@ Create a new Docker container from the IPsec VPN server image (customaized with 
 ```bash
 docker run \
     --name ipsec-vpn-server \
-    --env-file ./vpn.env \
+    --env-file vpn.env \
     --restart=always \
     -v ikev2-vpn-data:/etc/ipsec.d \
     -p 500:500/udp \
